@@ -16,7 +16,7 @@
     "url": "https://github.com/tepez/protractor-video-reporter/issues"
   },
   "homepage": "https://github.com/tepez/protractor-video-reporter",
-  "devDependencies": {
+  "dependencies": {
     "joi": "^6.5.0",
     "lodash": "^3.10.0",
     "mkdirp": "^0.5.1",
