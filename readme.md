@@ -34,5 +34,4 @@ The location of every video is `baseDirectory/{some UUID}`.
 * `saveSuccessVideos` (bool, false) - If true, will save the videos of the succussfull specs, as well as the failed specs.
 * `ffmpegCmd`: (string, "ffmpeg") - The command used to execute ffmpeg, e.g. /usr/bin/ffmpeg.
 * `ffmpegArgs`: (array of strings and nunmbers, see code for defaults) - The argumetns passed to ffmpeg, not including the actual output file which will be appended.
-* `debug` (boolean, false) - If true, will print debug information to the console.
 
