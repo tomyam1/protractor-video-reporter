@@ -21,6 +21,7 @@
     "joi": "^7.2.0",
     "lodash": "^3.10.0",
     "mkdirp": "^0.5.1",
-    "node-uuid": "^1.4.3"
+    "node-uuid": "^1.4.3",
+    "subtitles-parser": "0.0.2"
   }
 }
