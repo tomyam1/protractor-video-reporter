@@ -18,8 +18,8 @@
   "homepage": "https://github.com/tepez/protractor-video-reporter",
   "dependencies": {
     "debug": "^2.2.0",
-    "joi": "^7.2.0",
-    "lodash": "^3.10.0",
+    "joi": "^8.0.4",
+    "lodash": "^4.6.0",
     "mkdirp": "^0.5.1",
     "node-uuid": "^1.4.3",
     "subtitles-parser": "0.0.2"
