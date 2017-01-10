@@ -60,3 +60,7 @@ The file will be saves to `baseDirectory/protractor-specs.srt`.
         ]
     ```
 
+# Debugging
+
+If you encouter any issues with the reporter, e.g. video files are not created,
+turn on debugging by settings the `DEBUG` environment to `protractor-video-reporter`.
