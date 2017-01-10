@@ -36,8 +36,25 @@ In the protractor configuration file:
 
 * `singleVideo` (bool): If `true`, will create a single video file for all the specs. Defaults to `true`.
 The file will be saved to `baseDirectory/protractor-specs.mov`.
-If `singleVideo` is false, the reporter will create a separate video file for every spec and place it at `baseDirectory/{some random UUID}.mov`.
+If `singleVideo` is false, the reporter will create a separate video file for every spec and place it under the `baseDirectory`.
+The exact location is determined by `singleVideoPath`.
+
+* `singleVideoPath`: (string, function):
+
+When `uuid` (default): Each spec video file will be placed at `baseDirectory/{some random UUID}.mov`.
 If you prefer this option, you would have to look at the "Spec video is in: ..." messages that are printed to the console.
+
+When `fullName`: Each spec video will be placed at `baseDirectory/{spec full name} - {spec status}.mov`.
+The full name of the spec will be sanitized to be a valid file name
+
+If you want to determine the full name yourself you can pass a function.
+The function recieves a single argument, the result object passed to `specStarted`.
+For example, you can do:
+
+    singleVideoPath: function (result) {
+        // don't actually do this, you need to make sure fullName is a valid file name
+        result.fullName + '.mov';
+    }
 
 * `createSubtitles` (bool): If `true` and singleVideo is also true, will create a SRT subtitles file with the name details of the currently running spec. Defaults to `true`.
 The file will be saves to `baseDirectory/protractor-specs.srt`.
