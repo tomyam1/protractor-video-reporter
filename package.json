@@ -1,6 +1,6 @@
 {
   "name": "protractor-video-reporter",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A jasmine2 reporter to capture a video screen cast of Protractor specs run with xvfb",
   "main": "index.js",
   "scripts": {
