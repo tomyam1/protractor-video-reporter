@@ -56,6 +56,20 @@ For example, you can do:
         result.fullName + '.mov';
     }
 
+
+* `allSpecsVideoName`: (function):
+
+If you want to determine the full name of the single video file that will contain all specs, you can pass a string or function.
+You must also define `baseDirectory` path and set `singleVideo` as true to create a single video containing all specs.
+
+For example, you can do:
+
+    allSpecsVideoName: function (result) {
+        let timestamp = moment(new Date()).format('YYYYMMDD');
+        return 'protractor-specs_' + timestamp + '.avi';
+    },
+
+
 * `createSubtitles` (bool): If `true` and singleVideo is also true, will create a SRT subtitles file with the name details of the currently running spec. Defaults to `true`.
 The file will be saves to `baseDirectory/protractor-specs.srt`.
 
