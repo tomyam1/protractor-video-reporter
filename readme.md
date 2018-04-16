@@ -59,6 +59,13 @@ For example, you can do:
 * `createSubtitles` (bool): If `true` and singleVideo is also true, will create a SRT subtitles file with the name details of the currently running spec. Defaults to `true`.
 The file will be saves to `baseDirectory/protractor-specs.srt`.
 
+* `chmod` (string): Will attempt so set the given chmod on saved video. Defaults to `none` which will use the default permission settings for the file. For example:
+
+    ```
+        chmod: '755' or chmod: '0755'
+    ```
+
+
 * `saveSuccessVideos` (bool): If `true`, will save the videos of the succussfull specs, as well as the failed specs. This has no effect if `singleVideo` is `true` - we'll always capture all the specs then. Defaults to `false`.
 
 * `ffmpegCmd` (string):  The command used to execute ffmpeg, e.g. `'/usr/bin/ffmpeg'`. Defaults to `'ffmpeg'`.
